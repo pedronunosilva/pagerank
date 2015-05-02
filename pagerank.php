@@ -104,8 +104,9 @@
 		   		}
 			}
 
-			$ranks[$key] = $pr;
-		
+			//$ranks[$key] = $pr;
+			$ranks[$key]=round(($pr), $precision);
+			
 			echo ' <b>['.$key.']</b> => '.($pr);
 
 		}
